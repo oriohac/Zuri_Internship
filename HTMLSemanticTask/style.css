@@ -1,0 +1,50 @@
+body{
+    background-color: #F7F6F0;
+    margin: 0;
+}
+header{
+    background-color: #444444;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 0.1px;
+    padding-bottom:0.1px;
+    font-size: 18px;  
+    font-weight: 400;
+}
+.secone p{
+    margin-top: 54px;
+    text-align: center;
+    font-size: x-large;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    
+}
+.radio{
+    font-family:Arial, 'Franklin Gothic Medium', Helvetica, sans-serif;
+  display: block;
+  margin-left: calc(100%/2 - 65px);
+}
+.sectwo {
+  
+    text-align: center;
+    margin-top: 54px;
+}
+.btnpr{
+    background-color: #297E96;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btnxt{
+    background-color: #297E96;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
