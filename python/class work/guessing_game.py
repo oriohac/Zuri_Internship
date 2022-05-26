@@ -11,5 +11,5 @@ if user_guess == our_fav_number:
 if user_guess < our_fav_number:
    print("your guess is too low, try higher ")
 if user_guess > our_fav_number:
-     print("your guess is too high try lower")
+   print("your guess is too high try lower")
 
