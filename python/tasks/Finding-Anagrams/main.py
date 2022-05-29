@@ -21,4 +21,4 @@ anagram = anagram.lower()
 if len(word)==len(anagram):
         word = sorted(word)
         anagram = sorted(anagram)
-print(find_anagram(word, anagram))
+find_anagram(word, anagram)
