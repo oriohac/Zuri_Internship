@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">About Me</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="register.html">Register</a> |
+            <a href="login.html">Login</a> |
+        </nav>
+    </header>
+    <main>
+        <div class="contain">
+            <div class="logform">
+                <form method="get">
+                    <label for="email">Email</label><br> <input type="email" class="logitem" id="logemail" required>
+                    <br>
+                    <label for="password">Password</label> <br> <input type="password" class="logitem" id="logpass"
+                        minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                    <input type="submit" value="Sign In" class="logitem" id="logsubmit"><br>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created By Oriohac @2022</p>
+    </footer>
+</body>
+
+</html>

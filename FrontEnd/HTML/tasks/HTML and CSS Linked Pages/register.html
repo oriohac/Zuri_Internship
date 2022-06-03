@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">About Me</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="register.html">Register</a> |
+            <a href="login.html">Login</a> |
+        </nav>
+    </header>
+    <main>
+        <div class="contain">
+            <div class="regform">
+                <form method="get">
+                    <label for="fname">First Name </label><br> <input id="regfname" type="text" class="regitem"
+                        minlength="2" maxlength="20" required><br>
+                    <label for="lname">Last Name</label><br> <input id="reglname" type="text" class="regitem"
+                        minlength="2" maxlength="20" required><br>
+                    <label for="tel">Phone </label><br> <input id="regtel" type="tel" class="regitem" required
+                        minlength="11" maxlength="20"><br>
+                    <!--20 for country code-->
+                    <label for="gender">Gender</label> <br> <select name="gender" id="reggender" value="gender"
+                        class="regitem" required>
+                        <option value="male">Male </option>
+                        <option value="female">Female </option>
+                    </select><br>
+
+
+                    <label for="country">Country</label><br>
+
+                    <input type="text" id="regcountry" name="country" class="regitem" required><br>
+                    <label for="state">State/Province </label><br> <input id="regstate" type="text" class="regitem"
+                        required><br>
+                    <label for="email">Email</label><br><input id="regemail" type="email" class="regitem" required><br>
+                    <label for="pass">Password</label><br><input id="regpass" type="password" class="regitem" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                    <label for="repass">Confirm Password</label><br><input id="regrepass" type="password"
+                        class="regitem" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                    <input id="regsubmit" type="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created By Oriohac @2022</p>
+    </footer>
+</body>
+
+</html>
