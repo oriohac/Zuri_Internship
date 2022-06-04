@@ -4,12 +4,12 @@ body {
 }
 
 nav {
-
+  
     background-color: rgb(5, 5, 5);
     color: white;
     padding: 20px;
     min-height: 50px;
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -23,6 +23,7 @@ nav a {
 nav a:hover {
     color: #ffd209;
 }
+
 
 main {
     width: 68%;
