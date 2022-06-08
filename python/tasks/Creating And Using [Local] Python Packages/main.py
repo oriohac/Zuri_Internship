@@ -10,14 +10,14 @@ print("Scissors beats Paper")
 print("If two players choose the same character, it is a tie")
 #create a list of three choices
 c_choice = ['R','P','S']
-
+while True:
 #define function choose() so that player will enter his/her choice and the computer will choose randomly
-def choose():
+ def choose():
        '''function to make choices, this is the main body of the game'''
        choose.player_choice = str(input("Enter R, P or S To choose A character: "))
        choose.player_choice = choose.player_choice.upper()
        computer = random.choice(c_choice)
-              
+      
       #if player choice is equal to user choice promt player to choose character again
        if choose.player_choice == computer:
          print("Player""(",choose.player_choice,")"":""CPU""(",computer,")")
@@ -53,5 +53,7 @@ def choose():
               print("Enter The right Character: R, P or S ")
               choose()
               return
-choose()
+              
+ choose()
+ break
   
