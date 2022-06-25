@@ -35,7 +35,7 @@
 // }
 
 function getName() {
-   console.log('chike');
+   console.log('chikezirim');
 }
 
 getName();
