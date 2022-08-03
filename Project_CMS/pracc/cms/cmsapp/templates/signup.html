@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Signup</title>
+</head>
+<body>
+    {% block content %}
+      
+    
+    <main>
+        <div class="contain">
+            <div class="regform">
+                <form method="post">
+                    {% csrf_token %}
+                    <p> {{form.as_p}}</p>
+                    
+                    <label for="fname">First Name </label><br> <input id="regfname" name="regfname" type="text" class="regitem"
+                        minlength="2" maxlength="20" required><br>
+                    <label for="lname">Last Name</label><br> <input id="reglname" name="reglname" type="text" class="regitem"
+                        minlength="2" maxlength="20" required><br>
+                    
+
+                        <label for="email">Email</label><br><input type="email" id="regemail" name="regemail" name="country" class="regitem" required><br>
+                    
+                    <label for="Username">Username</label><br><input id="regusername" name="regusername" type="text" class="regitem" required><br>
+                    <label for="pass">Password</label><br><input id="regpass" name="regpass" type="password" class="regitem" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                    <label for="repass">Confirm Password</label><br><input id="regrepass" name="regrepass" type="password"
+                        class="regitem" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                    <input id="regsubmit" type="submit">
+
+                    <p>Have you signed up before? <a href="{% url 'cmsapp:login_user'  %}"><b>Login</b></a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    {% endblock content %}
+</body>
+</html>

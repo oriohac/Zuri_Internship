@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Login</title>
+</head>
+{% block content %}
+<body>
+    
+    <main>
+        <div class="contain">
+            <div class="logform">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <label for="username">Username</label><br> <input type="text" class="logitem" id="logusername" name="logusername" required>
+                    <br>
+                    <label for="password">Password</label> <br> <input type="password" class="logitem" id="logpass" name="logpass"
+                        minlength="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must have at least one number and one uppercase and lowercae letter, and at least 8 or more characters"><br>
+                       
+                    <input type="submit" value="Sign In" class="logitem" id="logsubmit"><br>
+                    <p>You don't have an account? <a href="{% url 'cmsapp:register' %}"><b>Signup</b></a></p>
+                    <p>Create site? <a href="{% url 'cmsapp:createsite'  %}"><b>create site</b></a></p>
+
+                </form>
+                
+                
+                
+                
+            </div>
+        </div>
+    </main>
+      
+    
+</body>
+{% endblock content %}
+</html>

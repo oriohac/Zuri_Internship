@@ -1,0 +1,22 @@
+{% load static %}
+
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+
+   <nav>
+      <div class = "nav">
+<a href="#" >Home</a>
+<a href="#" >About</a>
+<a href="#" >Contact</a>
+      </div>
+   </nav> 
+   
+   {% block content %}
+   {% endblock content %}
+
+   <footer>
+      <div class="footer">
+          <p>Copy right @ 2022 Oriohac</p>
+      </div>
+  </footer>
+  {% block footer %}
+   {% endblock footer %}

@@ -1,0 +1,144 @@
+body{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    min-height: 100vh;
+}
+.nav{
+  
+    background-color: blueviolet;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.nav a{
+    text-decoration:none;
+    color: white;
+    padding-left: 1.5%; 
+
+}
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    background-color: rgb(253, 253, 253);
+    -webkit-box-shadow: 0 0 4px hsl(208, 11%, 55%);
+            box-shadow: 0 0 4px hsl(208, 11%, 55%);
+    margin-top: 0;
+    padding: 10px;
+}
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    min-height: 100vh;
+}
+
+
+.logform {
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-shadow: 4px 4px 4px 4px rgb(184, 176, 176);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.logitem {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+#logusername,
+#logpass {
+    background-color: rgb(247, 240, 232);
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 20px;
+    height: 32px;
+}
+
+#logsubmit {
+    background-color: black;
+    color: #FFFFFF;
+    padding: 6px;
+    height: 46px;
+    width: 314px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+#logsubmit:hover {
+    background-color: rgb(12, 122, 165);
+}
+
+.regform {
+
+
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-shadow: 4px 4px 4px 4px rgb(184, 176, 176);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.regitem {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    width: 300px;
+    height: 32px;
+}
+
+#regfname,
+#reglname,
+#regtel,
+#regstate,
+#regusername,
+#regpass,
+#regrepass,
+#regemail {
+    background-color: rgb(247, 240, 232);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#reggender {
+    width: 314px;
+    height: 40px;
+    background-color: rgb(247, 240, 232);
+}
+#reggender:enabled{
+    background-color: #E8F0FE;
+}
+
+#regsubmit {
+    width: 314px;
+    height: 46px;
+    border-radius: 50px;
+    background-color: black;
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+}
+
+#regsubmit:hover {
+    background-color: rgb(12, 122, 165);
+}
+.footer{
+    background: blueviolet;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   color: white;
+   text-align: center;
+}
